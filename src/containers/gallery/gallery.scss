@@ -1,0 +1,46 @@
+.gallery {
+  width: 100%;
+  text-align: center;
+}
+
+.cell {
+  display: inline-block;
+  width: 22vw;
+  height: 22vw;
+  padding: 5px;
+}
+
+.searchContainer {
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 1200px) {
+  .cell {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .cell {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .cell {
+    width: 90vw;
+    height: 90vw;
+  }
+}

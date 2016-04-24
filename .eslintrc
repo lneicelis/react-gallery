@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "func-names": 0,
+    "arrow-spacing": [2, { "before": true, "after": true }],
+    "no-trailing-spaces": 0,
+    "space-before-blocks": 0,
+    "space-before-function-paren": 0,
+    "space-after-keywords": 0,
+    "array-bracket-spacing": 0,
+    "padded-blocks": 0,
+    "indent": [2, 4, {"SwitchCase": 1}],
+    "id-length": 0,
+    "max-len": [2, 300],
+    "eol-last": 0,
+    "new-cap": 0,
+    "object-curly-spacing": 0,
+    "semi": [2, "always"],
+    "comma-dangle": [0, "never"],
+    "react/jsx-indent-props": [0, 4],
+    "react/jsx-closing-bracket-location": [2, "after-props"],
+    "react/prefer-stateless-function": 0
+  }
+}
