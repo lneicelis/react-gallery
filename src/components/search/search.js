@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 
 export default class Search extends React.Component {
     static propTypes = {
-        onNeedleChange: PropTypes.function
+        onNeedleChange: PropTypes.func
     };
 
     constructor() {

@@ -1,7 +1,7 @@
 ## Features
 * responsive layout
 * lazy loaded
-* indication of images being loaded for the server
+* indication of images being loaded from the server
 * indication of image being downloaded
 * case insensitive split word search
 
@@ -22,9 +22,8 @@
 1. clone the repo
 2. cd react-gallery
 3. npm install
-4. cp .env.example .env
-5. npm start
-6. navigate to http://localhost:3000 in your browser.
+4. npm start
+5. navigate to http://localhost:3000 in your browser.
 
 ##To run tests
 

@@ -8,7 +8,9 @@ const finalCreateStore = compose(
     window.devToolsExtension ? window.devToolsExtension() : f => f
 )(createStore);
 
-const store = finalCreateStore(rootReducer);
+export function create() {
+    return finalCreateStore(rootReducer);
+}
 
 if (module.hot) {
     module.hot.accept('./reducers', () =>
@@ -16,4 +18,4 @@ if (module.hot) {
     );
 }
 
-export default store;
+export default create();

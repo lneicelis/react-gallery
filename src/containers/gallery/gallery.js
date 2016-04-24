@@ -24,8 +24,8 @@ class Gallery extends React.Component {
         photos: PropTypes.array,
         filter: PropTypes.object,
         loading: PropTypes.bool,
-        requestGalleryPhotos: PropTypes.function,
-        searchByNeedle: PropTypes.function
+        requestGalleryPhotos: PropTypes.func,
+        searchByNeedle: PropTypes.func
     };
 
     componentWillMount() {

@@ -14,20 +14,16 @@ export function createHttpRequest({URL, method}) {
     return new HttpRequest(URL, method);
 }
 
-/**
- *
- * @param {HttpRequest} httpRequest
- * @returns {Promise}
- */
-export function getResponse(httpRequest) {
-    const {URL, method, params, data} = httpRequest;
 
-    return axios({
-        url: URL,
-        method,
-        params,
-        data
-    }).delay(1000);
-}
+export default {
+    getResponse(httpRequest) {
+        const {URL, method, params, data} = httpRequest;
 
-export default client;
+        return axios({
+            url: URL,
+            method,
+            params,
+            data
+        }).delay(1000);
+    }
+};

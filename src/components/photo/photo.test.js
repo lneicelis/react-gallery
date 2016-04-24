@@ -21,7 +21,8 @@ describe('<Photo />', () => {
     it('should display title when image is loaded', () => {
         const component = shallow(<Photo
           src="http://localhost"
-          title="test title" />);
+          title="test title"
+        />);
 
         component.find('img').simulate('load');
 

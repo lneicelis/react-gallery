@@ -1,5 +1,5 @@
 import HttpRequest from '../../models/http-request';
-import {getResponse} from '../../services/api';
+import api from '../../services/api';
 import {REQUEST_MADE, RESPONSE_RECEIVED} from '../action-types';
 
 export default function requestMiddleware({dispatch}) {
@@ -8,7 +8,7 @@ export default function requestMiddleware({dispatch}) {
             const {request} = action;
 
             if (request instanceof HttpRequest) {
-                const promise = getResponse(request);
+                const promise = api.getResponse(request);
 
                 dispatch({
                     type: REQUEST_MADE,
