@@ -20,4 +20,8 @@
   line-height: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
+  transition-duration: .2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }

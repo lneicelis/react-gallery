@@ -14,6 +14,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }))
 
 app.use(require('webpack-hot-middleware')(compiler))
+
 app.use(express.static(path.join(__dirname, 'static')))
 app.use('/api', express.static(path.join(__dirname, 'storage')))
 
